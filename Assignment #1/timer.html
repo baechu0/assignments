@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Clock</title>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+</head>
+
+<body>
+    <div id="background">
+        <div id="select_box">
+            <input type="radio" id="timer" name="clock_type" value="timer" checked />
+            <label for="timer">Timer</label>
+            <input type="radio" id="stopwatch" name="clock_type" value="stopwatch" />
+            <label for="stopwatch">Stopwatch</label>
+        </div>
+        <div class="display_box timer">
+            <input type="number" min="0" value="0" id="timer_setup" /><span style="font-size: 20px;">min</span>
+            <input type="button" value="Start" class="op_btn" id="t_start_btn" />
+            <p id="timer_display">00:00</p>
+            <input type="button" value="Clear" class="op_btn" id="t_clear_btn" />
+        </div>
+        <div class="display_box stopwatch">
+            <input type="button" value="Start" class="op_btn" id="sw_start_btn" />
+            <input type="button" value="Record" class="op_btn" id="sw_record_btn" />
+            <input type="button" value="Stop" class="op_btn" id="sw_stop_btn" />
+            <p id="stopwatch_display">00:00</p>
+            <input type="button" value="Clear" class="op_btn" id="sw_clear_btn" />
+            <div id="record_box">
+                <ul id="record_list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.6.0.js"></script>
+    <script src="assets/js/timer.js"></script>
+</body>
+
+</html>

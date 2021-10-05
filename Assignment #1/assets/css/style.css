@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+* {
+    font-family: 'Playfair Display', serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#background {
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    background-image: url(../img/bg.jpg);
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    color: aliceblue;
+}
+
+#select_box {
+    width: 700px;
+    margin: 50px auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+#select_box label {
+    cursor: pointer;
+}
+
+.display_box {
+    width: 400px;
+    height: 300px;
+    font-size: 60px;
+    margin: 30px auto;
+    text-align: center;
+    line-height: 150px;
+}
+
+.stopwatch {
+    display: none;
+}
+
+.display_box p {
+    margin: 0;
+}
+
+.op_btn {
+    width: 100px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#timer_setup {
+    width: 50px;
+    font-size: 20px;
+}
+
+#record_box {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+#record_list {
+    padding: 0;
+    margin: 0;
+}
